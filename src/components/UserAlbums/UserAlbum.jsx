@@ -28,7 +28,7 @@ function UserAlbum({ album }) {
         <div className='album'>
             <h3 className='album__name'>{currentAlbum?.albumName}</h3>
 
-            <Link to={`/user/${userId}/albums/${currentAlbum?.albumId}`}>
+            <Link to={`${currentAlbum?.albumId}`}>
                 <button className='album__btn'>
                     {currentAlbum?.albumImage && (
                         <img

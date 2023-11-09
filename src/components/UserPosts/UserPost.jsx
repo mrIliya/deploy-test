@@ -27,7 +27,7 @@ function UserPost({ post }) {
         <article className='post'>
             <h4 className='post__title'>{currentPost?.postName}</h4>
             <p className='post__text'>{currentPost?.postText}</p>
-            <Link to={`/user/${userId}/posts/${currentPost?.postId}`}>
+            <Link to={`${currentPost?.postId}`}>
                 <button className="post__btn">see post</button>
             </Link>
         </article>
